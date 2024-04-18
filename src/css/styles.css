@@ -1,99 +1,114 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
+#root {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
 
-  .App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  .App-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .CreateBook {
-    min-height: 100vh;
-  }
-  
-  .BookList {
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    min-width: 100px;
-  }
-  
-  /* BookList Styles */
-  .list {
-    display: grid;
-    margin: 20px 0 50px 0;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 1fr;
-    grid-gap: 2em;
-  }
-  
-  .card-container {
-    width: 250px;
-    border: 1px solid rgba(0, 0, 0.125);
-    margin: 0 auto;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .desc {
-    height: 130px;
-    padding: 10px;
-  }
-  
-  .desc h2 {
-    font-size: 1em;
-    font-weight: 400;
-  }
-  
-  .desc h3,
-  p {
-    font-weight: 300;
-  }
-  
-  .desc h3 {
-    color: #6c757d;
-    font-size: 1em;
-    padding: 10px 0 10px 0;
-  }
-  
-  .delete {
-    float: right;
-  }
+.App {
+  border: #61dafbaa solid;
+}
+
+/* .comments-section {
+  margin-left: 20px;
+  flex: 1;
+} */
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.comment-form textarea {
+  /* width: fit-content; */
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #646cff;
+  border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+ul {
+  border: 2px solid;
+  padding: 5px;
+  overflow: auto;
+  height: 200px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+.photo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.photo-container>* {
+  flex-grow: 1;
+  flex-basis: 200px;
+  border: #61dafbaa solid 1px;
+}
+
+.photo {
+  height: 100%;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.comments-section {
+  margin-left: 5px;
+  /* border: #61dafbaa dashed 4px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.addbid {
+  flex-direction: column;
+  /* width: 30%; */
+  margin: 5px;
+}
+
+.App>h1 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 0;
+}
+
+form>button {
+  background: #008CBA;
+  color: white;
+}
+
+input {
+  margin: 5px 0px;
+  position: relative;
+}
+
+.add {
+  text-align: left;
+  background: #008CBA;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
