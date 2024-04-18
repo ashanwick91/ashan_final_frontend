@@ -5,20 +5,6 @@ import axios from "axios";
 const backend_url = process.env.REACT_APP_BACKEND_URL;
 
 const Art = (props) => (
-  // <div className="card-container">
-  //   <img
-  //     src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d"
-  //     alt="Books"
-  //     height="200"
-  //   />
-  //   <div className="desc">
-  //     <h2><a href="#" onClick={() => { props.editBook(props.keyt); }}>{props.title}</a></h2>
-  //     <h3>{props.author}</h3>
-  //     <p>{props.description}
-  //       <button className='btn btn-danger delete' onClick={() => { props.deleteBook(props.keyt); }}>X</button>
-  //     </p>
-  //   </div>
-  // </div>
 
   <div class="photo-container">
     <div class="photo">
